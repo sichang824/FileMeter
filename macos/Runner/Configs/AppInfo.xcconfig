@@ -8,7 +8,11 @@
 PRODUCT_NAME = FileMeter
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.FileMeter
+PRODUCT_BUNDLE_IDENTIFIER = com.example.filemeter
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2024 com.example. All rights reserved.
+
+// 应用版本
+MARKETING_VERSION=0.1.0
+CURRENT_PROJECT_VERSION=1

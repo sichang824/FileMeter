@@ -1,2 +1,22 @@
 #include "../../Flutter/Flutter-Release.xcconfig"
 #include "Warnings.xcconfig"
+#include "AppInfo.xcconfig"
+
+// Release 配置
+FLUTTER_BUILD_MODE=release
+FLUTTER_BUILD_NAME=$(MARKETING_VERSION)
+FLUTTER_BUILD_NUMBER=$(CURRENT_PROJECT_VERSION)
+
+// 代码签名设置
+CODE_SIGN_IDENTITY=Developer ID Application
+CODE_SIGN_STYLE=Manual
+DEVELOPMENT_TEAM=zhaoanke@163.com
+PROVISIONING_PROFILE_SPECIFIER=FileMeter
+
+// 优化设置
+DEAD_CODE_STRIPPING=YES
+DEBUG_INFORMATION_FORMAT=dwarf-with-dsym
+ENABLE_NS_ASSERTIONS=NO
+MTL_ENABLE_DEBUG_INFO=NO
+SWIFT_COMPILATION_MODE=wholemodule
+SWIFT_OPTIMIZATION_LEVEL=-O
