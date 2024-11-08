@@ -1,5 +1,5 @@
 name: filemeter
-description: "A new Flutter project."
+description: "FileMeter 是一个强大的文件整理工具，可以帮助您自动将文件按日期分类整理到不同目录中。它提供了灵活的配置选项，支持多种文件格式，让文件管理变得简单高效。"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev

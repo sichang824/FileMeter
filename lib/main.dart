@@ -24,7 +24,7 @@ class App extends StatelessWidget {
     return GetMaterialApp(
       home: HomeScreen(),
       defaultTransition: Transition.fade,
-      title: '文件整理工具',
+      title: 'FileMeter',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

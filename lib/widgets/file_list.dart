@@ -20,8 +20,6 @@ class FileListView extends GetView<FileController> {
         childAspectRatio: MediaQuery.of(context).size.width /
             (MediaQuery.of(context).size.height / 10),
         crossAxisCount: 1,
-        crossAxisSpacing: 10.0,
-        mainAxisSpacing: 10.0,
         children: controller.files.map((file) => _buildFileCard(file)).toList(),
       );
     });
@@ -31,24 +29,7 @@ class FileListView extends GetView<FileController> {
     return Card(
       child: GridTile(
         child: ListTile(
-          title: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                file.fileName,
-                overflow: TextOverflow.ellipsis,
-                maxLines: null,
-              ),
-              Text(
-                file.modifiedTime.toString(),
-                style: const TextStyle(
-                  fontSize: 12,
-                  color: Colors.grey,
-                ),
-              ),
-            ],
-          ),
-          trailing: Obx(() {
+          leading: Obx(() {
             final isInRemoveList =
                 settingsController.filesToRemove.containsKey(file.fileName);
             return IconButton(
@@ -68,6 +49,23 @@ class FileListView extends GetView<FileController> {
               tooltip: isInRemoveList ? '从删除列表中移除' : '添加到删除列表',
             );
           }),
+          title: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                file.fileName,
+                overflow: TextOverflow.ellipsis,
+                maxLines: null,
+              ),
+              Text(
+                file.modifiedTime.toString(),
+                style: const TextStyle(
+                  fontSize: 12,
+                  color: Colors.grey,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
