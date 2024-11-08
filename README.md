@@ -1,5 +1,9 @@
 # FileMeter
 
+<p align="center">
+  <img src="assets/icon/icon.png" width="128" height="128" alt="FileMeter Logo"/>
+</p>
+
 FileMeter 是一个强大的文件整理工具，可以帮助您自动将文件按日期分类整理到不同目录中。它提供了灵活的配置选项，支持多种文件格式，让文件管理变得简单高效。
 
 ## ✨ 主要功能
